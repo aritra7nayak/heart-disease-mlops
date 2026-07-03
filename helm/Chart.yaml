@@ -1,0 +1,16 @@
+apiVersion: v2
+name: heart-disease-api
+description: |
+  Helm chart for the Heart Disease Prediction API.
+  MLOps Assignment — BITS Pilani AIMLCZG523
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
+keywords:
+  - mlops
+  - machine-learning
+  - fastapi
+  - heart-disease
+maintainers:
+  - name: MLOps Student
+    email: student@bits.ac.in
