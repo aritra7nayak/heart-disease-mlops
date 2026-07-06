@@ -34,9 +34,10 @@ RUN pip install --no-cache-dir --upgrade pip && \
 COPY src/ ./src/
 COPY models/ ./models/
 
-# Create non-root user for security
+# Create non-root user and logs directory with correct permissions
 RUN addgroup --system appgroup && \
     adduser --system --ingroup appgroup appuser && \
+    mkdir -p /app/logs && \
     chown -R appuser:appgroup /app
 
 USER appuser
