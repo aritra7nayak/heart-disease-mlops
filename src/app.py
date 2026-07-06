@@ -19,7 +19,8 @@ from pydantic import BaseModel, Field, validator
 
 # ── Logging setup ─────────────────────────────────────────────────────────────
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-LOG_DIR = os.path.join(BASE_DIR, "logs")
+# Always use /tmp/logs in containers (writable by any user)
+LOG_DIR = "/tmp/logs"
 os.makedirs(LOG_DIR, exist_ok=True)
 
 logging.basicConfig(
