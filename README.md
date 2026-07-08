@@ -168,20 +168,6 @@ docker-compose up -d
 #   Grafana:    http://localhost:3000 (admin/admin)
 ```
 
----
-
-## Model Results
-
-| Model               | Accuracy | Precision | Recall | F1     | ROC-AUC |
-|---------------------|----------|-----------|--------|--------|---------|
-| Logistic Regression | 0.8852   | 0.8889    | 0.8571 | 0.8727 | 0.9697  |
-| Random Forest       | 0.8525   | 0.8800    | 0.7857 | 0.8302 | 0.9697  |
-| **XGBoost ✅**      | **0.9180**| **0.9259**| **0.8929**| **0.9091**| **0.9805** |
-
-XGBoost selected as best model (highest ROC-AUC & accuracy).
-
----
-
 ## Dataset
 
 - **Source:** UCI Machine Learning Repository — Heart Disease Cleveland Dataset  
@@ -203,7 +189,3 @@ XGBoost selected as best model (highest ROC-AUC & accuracy).
 | GET    | /docs       | Swagger UI (auto-generated)         |
 
 ---
-
-## Academic Integrity
-
-This assignment was completed independently by the student. All code, model choices, feature engineering, CI/CD configuration, and documentation are original work.
